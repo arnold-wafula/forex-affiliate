@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function CTA() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center text-center bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 text-white">
+    <section className="relative py-24 md:min-h-[70vh] flex items-center justify-center text-center bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 text-white">
       {/* Overlay grid */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 pointer-events-none" />
 
@@ -27,7 +27,7 @@ export default function CTA() {
             size="lg"
             variant="outline"
             className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-8 py-6 text-lg"
-            >
+          >
             Learn More
           </Button>
         </div>
