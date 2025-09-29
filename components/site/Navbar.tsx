@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-8 text-zinc-800 font-medium">
           <Link href="/" className="hover:text-zinc-500 transition-colors">Home</Link>
-          <Link href="#features" className="hover:text-zinc-500 transition-colors">Features</Link>
+          <Link href="/features" className="hover:text-zinc-500 transition-colors">Features</Link>
           <Link href="#instructions" className="hover:text-zinc-500 transition-colors">Instructions</Link>
           <Link href="#contact" className="hover:text-zinc-500 transition-colors">Contact</Link>
         </nav>
@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-zinc-200 shadow-lg">
           <nav className="flex flex-col items-start px-6 py-4 space-y-4 text-zinc-800 font-medium">
             <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="#features" onClick={() => setIsOpen(false)}>Features</Link>
+            <Link href="/features" onClick={() => setIsOpen(false)}>Features</Link>
             <Link href="#instructions" onClick={() => setIsOpen(false)}>Instructions</Link>
             <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
             <Button className="bg-black hover:bg-zinc-800 text-white rounded-full w-full">
