@@ -62,7 +62,7 @@ export default function Navbar() {
             <Link href="/strategies" onClick={() => setIsOpen(false)}>Strategies</Link>
             <Link href="/brokers" onClick={() => setIsOpen(false)}>Brokers</Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
-            <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
             <Button className="bg-black hover:bg-zinc-800 text-white rounded-full w-full">
               Join Now
             </Button>
