@@ -5,6 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import { ModeToggle } from "@/components/mode-toggle"
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -38,10 +40,14 @@ export default function Navbar() {
           <Link href="/contact" className="hover:text-zinc-500 transition-colors">Contact</Link>
         </nav>
 
-        {/* Desktop CTA */}
-        <Button className="hidden md:block bg-black hover:bg-zinc-800 text-white rounded-full px-6">
-          Join Now
+        {/* Desktop CTA + Theming button */}
+        <div className="hidden md:flex items-center gap-4">
+          <ModeToggle />
+          <Button className="bg-black hover:bg-zinc-800 text-white rounded-full px-6">
+            Join Now
         </Button>
+        </div>
+        
 
         {/* Mobile Hamburger */}
         <button
@@ -63,6 +69,7 @@ export default function Navbar() {
             <Link href="/brokers" onClick={() => setIsOpen(false)}>Brokers</Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+            <ModeToggle />
             <Button className="bg-black hover:bg-zinc-800 text-white rounded-full w-full">
               Join Now
             </Button>
