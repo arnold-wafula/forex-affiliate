@@ -31,8 +31,11 @@ export default function Navbar() {
         <nav className="hidden md:flex gap-8 text-zinc-800 font-medium">
           <Link href="/" className="hover:text-zinc-500 transition-colors">Home</Link>
           <Link href="/features" className="hover:text-zinc-500 transition-colors">Features</Link>
-          <Link href="#instructions" className="hover:text-zinc-500 transition-colors">Instructions</Link>
-          <Link href="#contact" className="hover:text-zinc-500 transition-colors">Contact</Link>
+          <Link href="/instructions" className="hover:text-zinc-500 transition-colors">Instructions</Link>
+          <Link href="/strategies" className="hover:text-zinc-500 transition-colors">Strategies</Link>
+          <Link href="/brokers" className="hover:text-zinc-500 transition-colors">Brokers</Link>
+          <Link href="/blog" className="hover:text-zinc-500 transition-colors">Blog</Link>
+          <Link href="/contact" className="hover:text-zinc-500 transition-colors">Contact</Link>
         </nav>
 
         {/* Desktop CTA */}
@@ -55,7 +58,10 @@ export default function Navbar() {
           <nav className="flex flex-col items-start px-6 py-4 space-y-4 text-zinc-800 font-medium">
             <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/features" onClick={() => setIsOpen(false)}>Features</Link>
-            <Link href="#instructions" onClick={() => setIsOpen(false)}>Instructions</Link>
+            <Link href="/instructions" onClick={() => setIsOpen(false)}>Instructions</Link>
+            <Link href="/strategies" onClick={() => setIsOpen(false)}>Strategies</Link>
+            <Link href="/brokers" onClick={() => setIsOpen(false)}>Brokers</Link>
+            <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
             <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
             <Button className="bg-black hover:bg-zinc-800 text-white rounded-full w-full">
               Join Now
